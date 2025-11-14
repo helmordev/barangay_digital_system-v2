@@ -9,9 +9,7 @@ return RectorConfig::configure()
         __DIR__.'/app',
         __DIR__.'/bootstrap/app.php',
         __DIR__.'/database',
-    ])
-    ->withSkip([
-        __DIR__.'/app/Http/Livewire/**',
+        __DIR__.'/public',
     ])
     ->withPreparedSets(
         deadCode: true,
