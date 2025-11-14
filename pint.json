@@ -1,7 +1,10 @@
 {
     "preset": "laravel",
     "notPath": [
-        "tests/TestCase.php"
+        "tests/TestCase.php",
+        "vendor",
+        "storage",
+        "bootstrap/cache"
     ],
     "rules": {
         "array_push": true,
@@ -18,6 +21,9 @@
             "import_classes": true,
             "import_constants": true,
             "import_functions": true
+        },
+        "ordered_imports": {
+            "sort_algorithm": "alpha"
         },
         "mb_str_functions": true,
         "modernize_types_casting": true,
@@ -50,12 +56,20 @@
             ],
             "sort_algorithm": "none"
         },
+        "class_attributes_separation": {
+            "elements": {
+                "method": "one",
+                "property": "one",
+                "const": "one"
+            }
+        },
         "ordered_interfaces": true,
         "ordered_traits": true,
         "protected_to_private": true,
         "self_accessor": true,
         "self_static_accessor": true,
         "strict_comparison": true,
+        "strict_param": true,
         "visibility_required": true
     }
 }
