@@ -76,13 +76,15 @@
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
         ],
         "lint": [
-            "rector",
-            "pint --parallel"
+            "rector process",
+            "pint --parallel",
+            "pnpm lint:fix"
         ],
         "test:type-coverage": "pest --type-coverage --min=100",
         "test:lint": [
             "pint --parallel --test",
-            "rector --dry-run"
+            "rector --dry-run",
+            "pnpm test:lint"
         ],
         "test:unit": "pest --parallel --exactly=100.0",
         "test:types": "phpstan",

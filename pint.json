@@ -1,11 +1,6 @@
 {
     "preset": "laravel",
-    "notPath": [
-        "tests/TestCase.php",
-        "vendor",
-        "storage",
-        "bootstrap/cache"
-    ],
+    "notPath": ["tests/TestCase.php", "vendor", "storage", "bootstrap/cache"],
     "rules": {
         "array_push": true,
         "backtick_to_shell_exec": true,
