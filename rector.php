@@ -19,8 +19,7 @@ return RectorConfig::configure()
         codeQuality: true,
         typeDeclarations: true,
         privatization: true,
-        earlyReturn: true,
-        naming: true
+        earlyReturn: true
     )
     ->withPhpSets()
     ->withImportNames(
